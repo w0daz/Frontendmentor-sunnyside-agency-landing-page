@@ -209,7 +209,33 @@ body {
   font-weight: 700;
 }
 
-.lmbar {
+.cardOnetext > .learnmore > a {
+  border-bottom: 10px solid hsl(51, 100%, 49%);
+  border-radius: 100px;
+  padding: 0 10px;
+  line-height: 0.2;
+}
+
+.cardOnetext > .learnmore > a:hover {
+  border-bottom: 10px solid hsl(51, 93%, 74%);
+}
+
+.cardTwotext > .learnmore > a {
+  border-bottom: 10px solid hsl(7, 99%, 70%);
+  border-radius: 100px;
+  padding: 0 10px;
+  line-height: 0.2;
+}
+
+.cardTwotext > .learnmore > a:hover {
+  border-bottom: 10px solid hsl(8, 90%, 80%);
+  border-radius: 100px;
+  padding: 0 10px;
+  line-height: 0.2;
+}
+
+
+/* .lmbar {
   background-color: hsl(51, 100%, 49%);
   height: 0.8rem;
   width: 50%;
@@ -229,7 +255,7 @@ body {
 .learnmore > .lmbar:hover {
   cursor: pointer;
   opacity: 150%;
-}
+} */
 
 .cardThree {
   background-image: url(images/mobile/image-graphic-design.jpg);
