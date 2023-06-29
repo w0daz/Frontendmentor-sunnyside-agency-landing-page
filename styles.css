@@ -196,6 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .learnmore > a {
@@ -205,57 +206,43 @@ body {
   color: hsl(212, 27%, 19%);
   font-size: 1.3em;
   margin-bottom: -0.71rem;
-  z-index: 1;
   font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cardOnetext > .learnmore > a {
-  border-bottom: 10px solid hsl(51, 100%, 49%);
-  border-radius: 100px;
-  padding: 0 10px;
-  line-height: 0.2;
+.cardOnetext > .learnmore > a::after {
+  content: "";
+  display: block;
+  height: 0.75rem;
+  width: 110%;
+  background-color: hsl(51, 93%, 74%);
+  border-radius: 999px;
+  translate: 0px -110%;
+  z-index: -1;
+  transition: all 150ms ease-in;
 }
 
-.cardOnetext > .learnmore > a:hover {
-  border-bottom: 10px solid hsl(51, 93%, 74%);
-}
-
-.cardTwotext > .learnmore > a {
-  border-bottom: 10px solid hsl(7, 99%, 70%);
-  border-radius: 100px;
-  padding: 0 10px;
-  line-height: 0.2;
-}
-
-.cardTwotext > .learnmore > a:hover {
-  border-bottom: 10px solid hsl(8, 90%, 80%);
-  border-radius: 100px;
-  padding: 0 10px;
-  line-height: 0.2;
-}
-
-
-/* .lmbar {
+.cardOnetext > .learnmore > a:hover::after {
   background-color: hsl(51, 100%, 49%);
-  height: 0.8rem;
-  width: 50%;
-  border-radius: 2rem;
-  opacity: 50%;
 }
 
-.cardtext > .learnmore:hover, .lmbar:hover  {
-  opacity: 100%;
+.cardTwotext > .learnmore > a::after {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 110%;
+  background-color: hsl(8, 90%, 80%);
+  border-radius: 999px;
+  translate: 0px -110%;
+  z-index: -1;
+  transition: all 150ms ease-in;
 }
 
-.cardTwotext > .learnmore > .lmbar {
-  background-color: hsl(7, 94%, 65%);
-  opacity: 50%;
+.cardTwotext > .learnmore > a:hover::after {
+  background-color: hsl(7, 99%, 70%);
 }
-
-.learnmore > .lmbar:hover {
-  cursor: pointer;
-  opacity: 150%;
-} */
 
 .cardThree {
   background-image: url(images/mobile/image-graphic-design.jpg);
